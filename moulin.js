@@ -1,4 +1,4 @@
-{"CastList":[
+CastList =[
     {
         "character":"Satine",
         "actorName":"Natalie Mendoza",
@@ -52,4 +52,4 @@
         "img":"https://moulinrougemusical.com/wp-content/uploads/2018/06/Jeigh-Madjus.jpg",
         "bio":"Broadway debut! Jeigh has worked internationally as a waiter, construction worker, ayurvedic spa receptionist, and performer. Here Lies Love (The Pub­lic/SRT), La Cage aux Folles (1st national). Film: Servitude. “Thanks to Alex, Justin, Sonya, John, and my family.”"
     }
-]}
+]
