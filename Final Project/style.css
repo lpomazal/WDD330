@@ -21,14 +21,19 @@ a:hover, a:active{
     width: 70%;
     clear: both;
 }
-
+header{
+    font-size: 250%;
+    font-weight: 200;
+}
 .titlebar{
     width:100%;
     height: auto;
     margin: 3% 0;
     text-align: center;
 }
-
+h1{
+    font-size: 150%;
+}
 .tooltip .tooltiptext::after {
     content: " ";
     position: absolute;
@@ -48,3 +53,33 @@ a:hover, a:active{
   .tooltip:hover .tooltiptext {
     opacity: 1;
   }
+  .flex-container{
+      display: flex;
+  }
+.flex-container > div{
+    background-color: white;
+    margin: 20px;
+    padding: auto;
+    font-size: 25px;
+}
+  #moulin{
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border: 10px black;
+      float: left;
+  }
+  #jagged{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 10px black;
+    float: center;
+}
+#tina{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 10px black;
+    float: right;
+}
