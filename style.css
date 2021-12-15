@@ -1,0 +1,85 @@
+body {
+    color:# ;
+    font-size: 87.5%;
+    font-family: 'Raleway', sans-serif;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+a:link, a:visited{
+
+}
+
+a:hover, a:active{
+
+}
+
+.body {
+    margin: 0 auto;
+    width: 70%;
+    clear: both;
+}
+header{
+    font-size: 250%;
+    font-weight: 200;
+}
+.titlebar{
+    width:100%;
+    height: auto;
+    margin: 3% 0;
+    text-align: center;
+}
+h1{
+    font-size: 150%;
+}
+.tooltip .tooltiptext::after {
+    content: " ";
+    position: absolute;
+    top: 100%; /* At the bottom of the tooltip */
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: black transparent transparent transparent;
+  }
+
+.tooltip .tooltiptext {
+    opacity: 0;
+    transition: opacity 1s;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    opacity: 1;
+  }
+  .flex-container{
+      display: flex;
+  }
+.flex-container > div{
+    background-color: white;
+    margin: 20px;
+    padding: auto;
+    font-size: 25px;
+}
+  #moulin{
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border: 10px black;
+      float: left;
+  }
+  #jagged{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 10px black;
+    float: center;
+}
+#tina{
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border: 10px black;
+    float: right;
+}
