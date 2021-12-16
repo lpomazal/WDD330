@@ -96,7 +96,7 @@
     },{
         "character":"Young Anna Mae",
         "actorName":"Skye Dakota Turner",
-        "img": "https://tinaonbroadway.com/wp-content/uploads/2019/08/TINA-Turner-Skye-Dakota-400x400.png
+        "img": "https://tinaonbroadway.com/wp-content/uploads/2019/08/TINA-Turner-Skye-Dakota-400x400.png",
         "bio":"SKYE DAKOTA TURNER (Young Anna Mae) is thrilled to be returning Broadway to reprise the role of Anna Mae. Skye has recently been seen as Young Aretha in the biopic Respect. Over the pandemic, Skye had the opportunity to work with “Sesame Street” and the Cleveland Playhouse."
     }
 ]
