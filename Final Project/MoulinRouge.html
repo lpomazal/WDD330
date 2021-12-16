@@ -5,85 +5,14 @@
         <meta charset="utf-8"/>
         <link rel="stylesheet" href="style.css" type="text/css" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <script type="text/html" src="./js/moulincopy.js"></script>
-        <script type="text/javascript">
-            function myFun(){
-                
-              var client = new XMLHttpRequest();
-              client.open('GET', './js/moulincopy.js');
-              client.onreadystatechange = function() {
-                let jsonParser = new JSON.JSONParser();
-                let jsonData = client.responseText;
-                console.log(jsonData);
-                let jsonObj = JSON.parse('./js/moulincopy.js');
-                console.log(jsonObj);
-              }
-              client.send();
-                let jsonParser = new JSON.JSONParser();
-                let jsonObject = json.parse('./js/moulincopy.js');
-                let data = jsonObject.get('./js/moulincopy.js');
-                System.out.println("ID: "+data.get("bio"));
-             for (var key in data) {
-              for (var i = 0; i < data[key].length; i++) {
-                var actor = data[key][i].actorName;
-                var Character = data[key][i].character;
-                var img = data[key][i].img;
-                var bio = data[key][i].bio;
-                var card = document.createElement('data1');
-                var actorID = trim(actor);
-                
-                card.innerHTML =
-                  '<div class="flex-container">' +
-                  '<div class="tooltip">' +
-                        '<img id= "' + actorID +'img" src= "' + img + '"/>' +
-                        '<h2 >' + actor + '</h2>' +
-                        '<span class="tooltiptext">' + bio + '</span>' +
-                    '</div>';
-                document.getElementById(data1).appendChild(card);
-                return card.innerHTML
-              }
-            }}
-            </script>
+        <script type="text/javascript" src="js/moulin.js"></script>
     </head>
 
-<body class="body"> //onload="myFun()"
+<body class="body" onload="myFun();">
     <header class="titlebar">
        
-    </header> 
-    <script type="text/javascript">
-    function setthis(){
-        let inputdata = {
-        "character":"Christian",
-        "actorName":"Aaron Tveit",
-        "img":"https://moulinrougemusical.com/wp-content/uploads/2019/05/cast_aaron_tveit-2.jpg",
-        "bio":"Broadway"
-    }
-    let jdata =  json.parse(inputdata)
-    document.getElementById(data2).lookupNamespaceURI = jdata.img; // inputdata[img].value);
-    document.getElementById(dataH).value = tostring(inputdata.character) + " - " + tostring(inputdata.actorName);
-    document.getElementById(dataT).outerText = inputdata.bio;
-
-    console.log(inputdata.img)};
-
-    </script>
-    
-
-    <div id="data1" onload="setthis()">
-        <div class="flex-container">
-            <div class="tooltip">
-                  <img id="data2"/>
-                  <h2 id="dataH"></h2>
-                  <span id="dataT" class="tooltiptext"></span>
-              </div>
-    </div>
-    <div class="flex-container">
-        <div class="tooltip">
-              <img src="https://moulinrougemusical.com/wp-content/uploads/2021/07/Natalie_Mendoza_headshot_400x400.jpg"/>
-              <h2 >Satine - Natalie Mendoza</h2>
-              <span class="tooltiptext">"Classically Trained"</span>
-          </div>
-    
-hello world
+    </header>
+    <div id="contentfromjson"></div>
     <footer>
 
     </footer>

@@ -6,57 +6,17 @@
     <link rel="stylesheet" href="style.css" type="text/css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script type="text/html" src="./js/tina.js"></script>
-    <script type="text/javascript">
-        function myFun(){
-            
-          var client = new XMLHttpRequest();
-          client.open('GET', './js/tina.js');
-          client.onreadystatechange = function() {
-            let jsonParser = new JSON.JSONParser();
-            let jsonData = client.responseText;
-            console.log(jsonData);
-            let jsonObj = JSON.parse('./js/tina.js');
-            console.log(jsonObj);
-          }
-          client.send();
-            let jsonParser = new JSON.JSONParser();
-            let jsonObject = json.parse('./js/tina.js');
-            let data = jsonObject.get('./js/tina.js');
-            System.out.println("ID: "+data.get("bio"));
-         for (var key in data) {
-          for (var i = 0; i < data[key].length; i++) {
-            var actor = data[key][i].actorName;
-            var Character = data[key][i].character;
-            var img = data[key][i].img;
-            var bio = data[key][i].bio;
-            var card = document.createElement('data1');
-            var actorID = trim(actor)
-            
-            card.innerHTML =
-              '<div class="flex-container">' +
-              '<div class="tooltip">' +
-                    '<img id= "' + actorID +'img" src= "' + img + '"/>' +
-                    '<h2 >' + actor + '</h2>' +
-                    '<span class="tooltiptext">' + bio + '</span>' +
-                '</div>';
-            document.getElementById(data1).appendChild(card);
-            return card.innerHTML
-          }
-        }}
-        </script>
-</head>
+  </head>
 
-
-<body class="body" onload="myFun()">
-    <header class="titlebar">
-
-    </header>
-    <div class="flex-container">
-        
-    </div>
-
-    <footer>
-
-    </footer>
-</body>
-</html>
+  <body class="body" onload="myFun();">
+      <header class="titlebar">
+         
+      </header>
+      <div id="contentfromjson"></div>
+      <footer>
+  
+      </footer>
+  </body>
+  </html>
+  
+  

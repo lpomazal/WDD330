@@ -100,3 +100,18 @@
         "bio":"SKYE DAKOTA TURNER (Young Anna Mae) is thrilled to be returning Broadway to reprise the role of Anna Mae. Skye has recently been seen as Young Aretha in the biopic Respect. Over the pandemic, Skye had the opportunity to work with “Sesame Street” and the Cleveland Playhouse."
     }
 ]
+
+
+function myFun(){
+    var contentDiv = document.getElementById('contentfromjson');
+    for(var i in starsArray){
+        var star = starsArray[i];
+        contentDiv.innerHTML += '<div class="flex-container">' +
+                        '<div class="tooltip">' +
+                            '<img src="' + star.img + '"/>' +
+                            '<h2>' + star.character + ' - ' + star.actorName + '</h2>' + 
+                            '<span class="tooltiptext">"' + star.bio + '"</span>' +
+                        '</div>' +
+                      '</div>'
+    }
+}

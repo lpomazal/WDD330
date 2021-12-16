@@ -38,3 +38,17 @@
         "bio":"Broadway: Something Rotten! (Bea), Outer Critics and Grammy nominations, The Addams Family (Alice), Disney’s The Little Mermaid (Ursula), The Full Monty, and [title of show] (Heidi).  Heidi created the role of Katherine in Freaky Friday for Disney Channel and Disney on Broadway. Other New York: City Center’s Encores! The Most Happy Fella (Cleo), The Vineyard Theatre: Now. Here. This. and [title of show]. Favorite Regional: Weston Playhouse: Next to Normal (Diana), Kennedy Center, Signature Theatre and PBS: “First You Dream: The Music Of Kander And Ebb”, and Ford’s Theatre: Meet John Doe (Ann Mitchell – Helen Hayes Award.)",
     }
 ]
+
+function myFun(){
+    var contentDiv = document.getElementById('contentfromjson');
+    for(var i in starsArray){
+        var star = starsArray[i];
+        contentDiv.innerHTML += '<div class="flex-container">' +
+                        '<div class="tooltip">' +
+                            '<img src="' + star.img + '"/>' +
+                            '<h2>' + star.character + ' - ' + star.actorName + '</h2>' + 
+                            '<span class="tooltiptext">"' + star.bio + '"</span>' +
+                        '</div>' +
+                      '</div>'
+    }
+}
