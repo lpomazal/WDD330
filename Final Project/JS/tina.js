@@ -1,4 +1,4 @@
-[
+var starsArray =[
     {
         "character":"Tina Turner",
         "actorName":"Nkeki Obi-Melekwe",
