@@ -1,4 +1,4 @@
-var starsArray =[
+var starsArray = [
     {
         "character":"Mary Jne Healy",
         "actorName":"Heidi Blickenstaff",
